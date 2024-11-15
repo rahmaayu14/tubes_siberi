@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./images/perpuss.png"); /* Sesuaikan gambar background */
+    background-size: cover;
+    background-position: center;
+}
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi container menjadi dua kolom yang sama lebar */
+    gap: 100px; /* Jarak antara kolom-kolom */
+    padding-top: 50px;
+    padding-left: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    backdrop-filter: blur(3px);
+  }
+
+  /* Style untuk section top */
+.top {
+    position: fixed; /* Membuat header tetap di atas saat di-scroll */
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 1000; /* Pastikan berada di atas konten lainnya */
+}
+
+/* Style untuk navigasi */
+.top-nav {
+    display: flex;
+    justify-content: flex-end; /* Mengarahkan tautan ke kanan */
+    align-items: center;
+}
+
+/* Style untuk link di dalam navigasi */
+.top-nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.top-nav a:hover {
+    color: #153448; /* Warna saat hover */
+}
+  
+  .left-section {
+    flex: 1;
+    padding: 40px;
+    padding-top: 70px;
+    color: #F5ECDF;
+    text-align: left;
+  }
+  
+  .left-section .logo {
+    padding-left: 150px;
+  }
+  
+  .left-section .welcome-text {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  .left-section .description {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .left-section .details {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .right-section {
+    flex: 1;
+    background-color: #DFD0B8;
+    border-radius: 17px;
+    padding: 30px;
+    padding-bottom: 10px;
+    width: 448px;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .google {
+    background-color: #FFFF;
+    color: #595855;
+  }
+
+  .google:hover{
+    background-color: #A69173;
+  }
+  
+  .facebook {
+    background-color: #FFFF;
+    color: #595855;
+  }
+
+  .facebook:hover {
+    background-color: #A69173;
+  }
+  
+  .microsoft {
+    background-color: #FFFF;
+    color: #595855;
+  }
+
+  .microsoft:hover {
+    background-color: #A69173;
+  }
+  
+  .divider {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #777;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #777;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    font-size: 0.9rem;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.signup-form .required {
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.signup-form input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid #A69173;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.name-container {
+    display: flex;
+    gap: 10px;
+}
+
+.name-field {
+    flex: 1;
+}
+
+  .submit {
+    padding-left: 115px;
+}
+.submit-btn {
+    background-color: #153448;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: 60%;
+    height: 41px;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #4b4d4d;
+}
+  
